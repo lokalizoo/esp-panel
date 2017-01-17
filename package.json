@@ -1,0 +1,26 @@
+{
+  "name": "esp-panel",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "bower i -q && babel-html -s src -d www -Dm",
+    "test": "htmlhint -c .htmlhintrc \"src/**/*.html\" && stylelint \"src/**/*.html\" && eslint src --ext js,html",
+    "watch": "concurrently \"lite-server\" \"babel-html -s src -d www -Dmw\""
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-html": "^0.5.0",
+    "babel-plugin-transform-es2015-modules-umd": "^6.18.0",
+    "babel-polyfill": "^6.20.0",
+    "babel-preset-env": "^1.1.4",
+    "bower": "^1.8.0",
+    "concurrently": "^3.1.0",
+    "eslint": "^3.12.2",
+    "eslint-plugin-html": "^1.7.0",
+    "htmlhint": "^0.9.13",
+    "lite-server": "^2.2.2",
+    "stylelint": "^7.7.1",
+    "stylelint-processor-html": "^1.0.0"
+  }
+}

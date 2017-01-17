@@ -1,0 +1,19 @@
+{
+  "presets": [
+    [
+      "env",
+      {
+        "targets": {
+          "browsers": [
+            ">5%",
+            ">5% in PL",
+            "not IE <99"
+          ]
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    "transform-es2015-modules-umd"
+  ]
+}

@@ -1,0 +1,66 @@
+<!doctype html>
+
+<html>
+
+  <head>
+    <title>Panel</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <p class="text-center"><img class="logo" src="/umbrella.png" alt="logo"></p>
+
+      <div class="panel panel-default form-horizontal" method="POST" action="/config">
+        <div class="panel-heading">Advanced</div>
+        <div class="panel-body">
+          <div class="form-group">
+            <label class="control-label col-xs-3" for="port">Port</label>
+            <div class="col-sm-6 col-xs-9">
+              <input class="form-control" type="number" name="port">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-xs-3" for="start_server">Start Server</label>
+            <div class="col-sm-6 col-xs-9">
+              <input class="form-control" type="number" name="start_server">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-xs-3" for="start_ap">Start AP</label>
+            <div class="col-sm-6 col-xs-9">
+              <input class="form-control" type="number" name="start_ap">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-xs-3" for="cfg_url">Config URL</label>
+            <div class="col-sm-6 col-xs-9">
+              <input class="form-control" type="text" name="cfg_url">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-xs-3" for="cfg_json">Config JSON</label>
+            <div class="col-sm-6 col-xs-9">
+              <textarea class="form-control" name="cfg_json"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p>
+        <a href="/" class="btn btn-primary btn-lg btn-block">🔙 Basic</a>
+      </p>
+
+    </div>
+
+    <script>
+
+    </script>
+
+  </body>
+
+</html>
