@@ -31,11 +31,15 @@ section {
 h2 {
   font-size: 14px;
 }
-input {
+label {
+  margin: 0 8px;
+}
+input[type=text], input[type=password], input[type=number], textarea {
   background: #fefefe;
-  height: 22px;
   margin: 0 8px;
   padding: 2px 8px;
+  height: 22px;
+  line-height: 16px;
   border-top: 1px solid #aaa;
   border-left: 1px solid #bbb;
   border-right: 1px solid #bbb;
@@ -44,7 +48,10 @@ input {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
   color: #444;
 }
-.button {
+textarea {
+  height: auto;
+}
+.button, input[type=submit] {
   white-space: nowrap;
   display: block;
   text-align: center;
@@ -67,10 +74,15 @@ input {
     box-shadow 0.05s ease-out,
     padding-top 0.05s ease-out;
 }
-.button:hover {
+input[type=submit] {
+  padding: 0 8px 4px;
+}
+.button:hover,
+input[type=submit]:hover {
   background-position: 0 0;
 }
-.button:active {
+.button:active,
+input[type=submit]:active {
   padding-top: 8px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 3px rgba(0, 0, 0, 0.2) inset;
 }
@@ -82,11 +94,11 @@ p {
   align-items: center;
 }
 .form-field > button,
-.form-field > a,
 .form-field > label {
   flex: 1;
 }
-.form-field > input {
+.form-field > input,
+.form-field > textarea {
   flex: 3;
 }
 @media (max-width: 800px) {
